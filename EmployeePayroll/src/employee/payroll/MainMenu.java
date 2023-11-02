@@ -57,6 +57,7 @@ public class MainMenu extends javax.swing.JFrame {
     {
         try {
             
+            //String db = "SELECT ID, First_Name, Date_of_birth, Gender, Designation, Date_Hired, Job_Title, Salary, Status FROM staff_info WHERE STR_TO_DATE(Date_of_birth, '%d/%m/%Y') BETWEEN DATE_FORMAT(NOW(), '%Y-%m-21') AND DATE_FORMAT(NOW() + INTERVAL 1 MONTH, '%Y-%m-20')";
             String db = "SELECT ID, First_Name, Date_of_birth, Gender, Designation, Date_Hired, Job_Title, Salary, Status FROM staff_info WHERE STR_TO_DATE(Date_of_birth, '%d/%m/%Y') BETWEEN DATE_FORMAT(NOW(), '%Y-%m-21') AND DATE_FORMAT(NOW() + INTERVAL 1 MONTH, '%Y-%m-20')";
             pst = conn.prepareStatement(db);
             rs = pst.executeQuery();

@@ -239,10 +239,12 @@
                                   </Group>
                               </Group>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="txt_status" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="btn_add_MainMenu" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="3" attributes="0">
+                                      <Component id="txt_status" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      <Component id="jLabel16" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                               </Group>
                           </Group>
                       </Group>
@@ -264,7 +266,7 @@
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="61" max="32767" attributes="0"/>
+              <EmptySpace pref="206" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -276,12 +278,23 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txt_fname">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txt_fnameActionPerformed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_fnameKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txt_lname">
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_lnameKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txt_birthDate">
     </Component>
     <Component class="javax.swing.JTextField" name="txt_phone">
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_phoneKeyPressed"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_phoneKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txt_address">
       <Events>
@@ -289,16 +302,32 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txt_birthPlace">
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_birthPlaceKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txt_email">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_emailKeyReleased"/>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_emailKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txt_department">
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_departmentKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txt_designation">
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_designationKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txt_salary">
     </Component>
     <Component class="javax.swing.JTextField" name="txt_status">
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_statusKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txt_jobTitle">
     </Component>
@@ -307,6 +336,9 @@
     <Component class="javax.swing.JTextField" name="txt_houseNumber">
     </Component>
     <Component class="javax.swing.JTextField" name="txt_BInumber">
+      <Events>
+        <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txt_BInumberKeyReleased"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>

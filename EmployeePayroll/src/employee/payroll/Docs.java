@@ -59,17 +59,6 @@ public class Docs extends javax.swing.JFrame {
             {
                 pst = conn.prepareStatement("INSERT INTO docs (staff_id, Employee_Name, BI, NUIT, Certificado, Ultimo_despacho, Date, status) VALUES (?,?,?,?,?,?,?,?)");
                 
-//                File BI_file = new File(BI_path);
-//                FileInputStream BI_InputStrem = new FileInputStream(BI_file);
-//
-//                File NUIT_file = new File(NUIT_path);
-//                FileInputStream NUIT_InputStrem = new FileInputStream(NUIT_file);
-//
-//                File Certificado_file = new File(Certificado_path);
-//                FileInputStream Certificado_InputStrem = new FileInputStream(Certificado_file);
-//
-//                File Despacho_file = new File(Despacho_path);
-//                FileInputStream Despacho_InputStrem = new FileInputStream(Despacho_file);
 
                 pst.setString(1, "1");
                 pst.setString(2, employee_name);
